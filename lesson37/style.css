@@ -1,0 +1,16 @@
+body{
+    background-color: skyblue;
+    font-size: 1.2rem;
+    margin:20px;
+    padding: 40px;
+    color: maroon;
+    
+}
+
+div{
+    text-align: center;
+    background-color:darkgray;
+    height: 20rem;
+    width: 20rem;
+    padding: 2rem;
+}
