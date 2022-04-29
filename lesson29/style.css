@@ -1,0 +1,23 @@
+body{
+    background-color:darkcyan;
+    color:white;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+   
+}
+
+.hh1{
+    color: hotpink ;
+    font-style: italic;
+    font-weight: bold;
+    font-size:2rem;
+    z-index: 1;
+    transition: 0.3s;
+
+
+
+
+
+}
