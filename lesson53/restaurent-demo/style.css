@@ -1,0 +1,526 @@
+html{
+    scroll-behavior:  smooth;
+}
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.container{
+
+    max-width: 1000px;
+    margin: auto;
+
+    /* font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+
+
+}
+
+.row{
+    width: 100%;
+
+}
+.row::after{
+    content: ' ';
+    display: table;
+    clear: both;
+
+}
+
+
+[class*="col-"]
+{
+    float: left;
+    padding: 15px;
+
+}
+
+
+[class*="col-"]
+{
+    width: 100%;
+}
+
+
+/* header start here */
+
+header{
+    background-color:#293E51;
+    padding: 0% 1%;
+    text-align: center;
+}
+.m-name p{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    transition:0.5s;
+    display: block;
+}
+.m-name p:hover{
+    color: rgb(248, 204, 226);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+nav ul li{
+    display: block;
+
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: unset;
+    color: white;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+  
+ 
+}
+nav ul li a:hover{
+    background-color: rgb(34, 30, 27);
+    border-radius: 10px;
+}
+
+
+
+
+/* header end here */
+
+/* banner start part */
+
+#banner-section{
+    background-image:url('images/restaurant.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: capitalize;
+}
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+
+}
+
+.banner-contents h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background: rgb(182, 241, 62);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+}
+
+.banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background: rgb(48, 102, 25);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.banner-contents .btn{
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background:rgb(48, 102, 25);
+    color: rgb(253, 245, 245);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+
+}
+
+.banner-contents .btn:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+/* banner end part */
+
+/* about us start */
+#about-us{
+    padding: 1%;
+    color: white;
+
+}
+.about-us-contents{
+text-align: center;
+text-transform: capitalize;
+
+}
+.about-us-contents > h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.about-us-contents > h2:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+
+}
+.about-us-contents > p{
+    font-size: 0.8rem;
+    margin-bottom: 10px; 
+    transition: 0.5s;
+    
+
+}
+.about-us-contents > p::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(228, 146, 146);
+}
+.about-us-contents > p:hover{
+    transform: scale(1.2);
+    transition:0.5s;
+
+}
+/* about us end */
+
+/* food menu start in here */
+#menu-section{
+    padding: 1%;
+    text-transform: capitalize;
+}
+.card-body{
+    text-align: center;
+}
+.card-body > img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+    
+.item-dis{
+    background: rgb(165, 164, 164);
+
+}
+.item-name{
+    background:rgb(132, 221, 30) ;
+     color: white;
+     padding: 10px;
+}
+.item-dis > p{
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.card{
+    transition: 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/* food menu end in here */
+/* contact start */
+#contact{
+    padding: 1%;
+    background-color: rgb(58, 90, 90);
+    text-transform: capitalize;
+}
+.cd{
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+.cd> h4{
+    font-size: 1.5rem;
+
+}
+
+.cd>.h-name h5{
+    font-size: 1.3rem;
+    color: antiquewhite;
+    font-family: 'Handlee', cursive;
+    transition: 0.5s;
+
+}
+.cd>.h-name h5:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+
+}
+.map{
+    width: 100%;
+    height: 250px;
+}
+.cd p , address{
+    font-size: 1rem;
+}
+/* contact ends */
+
+/* footer start */
+footer{
+    padding: 1%;
+    color: white;
+    background-color: rgb(24, 23, 36);
+}
+footer p{
+    line-height: 35px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.social-menus{
+    text-align: center;
+}
+
+.icon-style{
+    color: rgb(255, 254, 253);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding-top: 12px;
+    text-align: center;
+    transition: 0.5s;
+}
+.icon-style:hover{
+    background-color: gray;
+    transition: 0.5s;
+    border-radius: 50%;
+    transform: scale(1.2);
+
+    
+}
+
+
+
+
+/* footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for small divice (plone or tablets) */
+
+
+@media (min-width: 576px) {
+
+    .col-sm-1{
+        width: 8.33%;
+    }
+
+    .col-sm-2{
+        width: 16.66%;
+    }
+    .col-sm-3{
+        width: 25%;
+    }
+    .col-sm-4{
+        width: 33.33%;
+    }
+    .col-sm-5{
+        width: 41.66%;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-7{
+        width: 58.33%;
+    }
+    .col-sm-8{
+        width: 66.66%;
+    }
+
+    .col-sm-9{
+        width: 75%;
+    }
+
+    .col-sm-10{
+        width: 83.33%;
+    }
+    .col-sm-11{
+        width: 91.66%;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+
+}
+
+/* medium divice (<768pox) for */
+
+@media (min-width: 768px) {
+
+    .col-md-1{
+        width: 8.33%;
+    }
+
+    .col-md-2{
+        width: 16.66%;
+    }
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-4{
+        width: 33.33%;
+    }
+    .col-md-5{
+        width: 41.66%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-7{
+        width: 58.33%;
+    }
+    .col-md-8{
+        width: 66.66%;
+    }
+
+    .col-md-9{
+        width: 75%;
+    }
+
+    .col-md-10{
+        width: 83.33%;
+    }
+    .col-md-11{
+        width: 91.66%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+
+}
+
+
+    /* large divice (<992pox) for */
+
+@media (min-width: 992px) {
+    .logo-div{
+        text-align: left;
+    }
+    nav ul{
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a{
+        display: inline-block;
+        transition: 0.4s;
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+        color:rgb(49, 177, 228);
+        transform: scale(1.1);
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+
+    /* bannrr start */
+#banner-section{
+    position: relative;
+    height: 100vh;
+}
+.banner-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.banner-contents p{
+    width: 500px;
+    font-size: 1.5rem;
+
+}
+.banner-contents h1{
+    width: 700px ;
+    font-size: 3rem;
+}
+      /* bannrr endt*/
+
+      /* footer start here */
+footer p{
+    text-align: left;
+}
+
+.social-menus{
+    text-align: right;
+}
+      
+      /* footer end here */
+
+    .col-lg-1{
+        width: 8.33%;
+    }
+
+    .col-lg-2{
+        width: 16.66%;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-4{
+        width: 33.33%;
+    }
+    .col-lg-5{
+        width: 41.66%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+    .col-lg-7{
+        width: 58.33%;
+    }
+    .col-lg-8{
+        width: 66.66%;
+    }
+
+    .col-lg-9{
+        width: 75%;
+    }
+
+    .col-lg-10{
+        width: 83.33%;
+    }
+    .col-lg-11{
+        width: 91.66%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+
+}
+
